@@ -16,6 +16,6 @@ def in_order(arr):
     
     return arr
 
-arr = [11, 7, 2, 13, 12, 6, 5, 4]
+arr = [100, 7, 2, 13, 17, 6, 5, 4]
 print(in_order(arr))  # [2, 4, 5, 6, 7, 11, 12, 13]
 
