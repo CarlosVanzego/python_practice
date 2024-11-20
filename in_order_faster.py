@@ -1,12 +1,12 @@
-def in_order(arr):
+def in_order_faster(arr):
     # Base case: if the array has 1 or 0 elements, it is already sorted
     if len(arr) <= 1:
         return arr
     
     # Find the midpoint and split the array into left and right halves
     mid = len(arr) // 2
-    left = in_order(arr[:mid])
-    right = in_order(arr[mid:])
+    left = in_order_faster(arr[:mid])
+    right = in_order_faster(arr[mid:])
     
     # Merge the sorted halves
     return merge(left, right)
@@ -31,35 +31,7 @@ def merge(left, right):
     return sorted_array
 
 arr = [9, 3, 12, 1, 6, 4, 3, 2]
-print(in_order(arr))  
+print(in_order_faster(arr))  
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# def in_order(arr):
-#     for i in range(len(arr)):
-#         min_val = i 
-#         for s in range(i + 1, len(arr)):
-#             if arr[s] < arr[min_val]:
-#                 min_val = s
-        
-
-#         temp = arr[i]  
-#         arr[i] = arr[min_val]  
-#         arr[min_val] = temp  
-    
-#     return arr
-
-# arr = [11, 7, 2, 13, 12, 6, 5, 4]
-# print(in_order(arr))  
