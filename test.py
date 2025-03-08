@@ -110,3 +110,11 @@ elif number < 5:
  print(number + 3)
 else:
  print(number * 2 % 5)
+
+
+
+ x = 0
+while x < 5:
+  print("Not there yet, x=" + str(x))
+  x = x + 1
+print("x=" + str(x))
