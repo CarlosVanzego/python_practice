@@ -40,5 +40,16 @@ sector_amount = disk_size / sector_size
 
 print(sector_amount) # Should print 33554432.0
 
+# The following lines assign the variable to the left of the = 
+# assignment operator with the values and arithmetic expressions 
+# on the right side of the = assignment operator.
+hotel_room = 400
+tax = hotel_room * 0.17
+total = hotel_room + tax
+room_guests = 4
+share_per_person = total/room_guests
+
+print("Each person has to pay: " + str(share_per_person)) # change a data type
+
 
 
