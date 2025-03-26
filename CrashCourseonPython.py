@@ -1,6 +1,6 @@
-# friends = ["Daredevil", "Python", "Google", "Tea"]
-# for friend in friends:
-#   print("Hi " + friend)
+friends = ["Tray", "Nab", "Sheed", "Los", "Zay", "JC", "Brandon", "Vince"]
+for friend in friends:
+  print("Hi " + friend)
 
 
 # print(2+2/((2+2)+(2**2)))
